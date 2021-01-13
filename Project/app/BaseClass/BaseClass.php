@@ -16,20 +16,23 @@ namespace app\BaseClass;
   private $title;
   private $page;
 
+  public function getSay($prop)
+  {
+    echo "
+    <h1>Selamat Datang...</h1>
+    <h4> Anda sedang berada di :<span class='hasil'> ".$prop." </span></h4>
+    ";
+  }
+
   public function getTitle($title)
   {
     $this->title=$title;
     echo $this->title;
   }
 
-   public static function sayHallo(){
-
-   return "
-   <h1>Selamat Datang...</h1>
-     <br/>
-  <h4> Anda sedang berada di :<span class='hasil'> ".BaseClass::class."</span></h4>
-  ";
-
-   }
+  public static function sayHallo()
+  {
+    BaseClass::getSay(BaseClass::class);
+  }
 
 }

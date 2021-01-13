@@ -40,75 +40,84 @@ class Profesi extends \app\BaseClass\BaseClass{
 
     $this->bersih=
       ($this->penghasilan - $this->pengeluaran);
+      // echo "<h1>{$this->bersih}</h1>";
 
-if($this->bersih <= $this->nisab):
+      if($this->bersih === 0):
+          echo "
+          <fieldset>
+             <h2>Maaf anda belum mengisi ketentuan yang diharapkan mesin penghitungan kami.<br><span class='hasil'>Method Error</span>
+            </h2>
+          </fieldset>
+          ";
 
-echo "
-<fieldset>
-<h1>Hitung Zakat </h1>
-<h2>
-    Penghasilan : <span class='hasil'> Rp. ".number_format($this->penghasilan)."</span>
-<br>
+      elseif($this->bersih <= $this->nisab):
 
-    pengeluaran :
-    <span class='hasil'>
-Rp. ".number_format($this->pengeluaran)."
-</span>
-<br>
+        echo "
+        <fieldset>
+        <h1>Hitung Zakat </h1>
+        <h2>
+            Penghasilan : <span class='hasil'> Rp. ".number_format($this->penghasilan)."</span>
+        <br>
 
-    nisab :
-<span class='hasil'>
-Rp.".number_format($this->nisab)."
-</span>
-<br>
+            pengeluaran :
+            <span class='hasil'>
+        Rp. ".number_format($this->pengeluaran)."
+        </span>
+        <br>
 
-    kadar zakat :
-<span class='persen'>".KDR."%
-</span>
-<br>
-";
+            nisab :
+        <span class='hasil'>
+        Rp.".number_format($this->nisab)."
+        </span>
+        <br>
 
-echo "Asset anda tidak masuk dalam penghitungan nisab <br><span class='hasil'>Bebas Zakat</span>
-</h2>
-</fieldset>
-";
+            kadar zakat :
+        <span class='persen'>".KDR."%
+        </span>
+        <br>
+        ";
 
-elseif($this->bersih >= $this->nisab):
+        echo "Asset anda tidak masuk dalam penghitungan nisab <br><span class='hasil'>Bebas Zakat</span>
+        </h2>
+        </fieldset>
+        ";
 
-    $this->result=
-      (($this->bersih * KDR)/100);
+      elseif($this->bersih >= $this->nisab):
 
-echo "
-    <fieldset>
-    <h1>Ayo Bayar Zakat</h1>
-    <h2>
-    Penghasilan :
-    <span class='hasil'>Rp. ".
-number_format($this->penghasilan)."</span>
-<br>
+          $this->result=
+            (($this->bersih * KDR)/100);
 
-    pengeluaran :
-    <span class='hasil'>Rp. ".
-number_format($this->pengeluaran)."</span>
-<br>
+          echo "
+              <fieldset>
+              <h1>Ayo Bayar Zakat</h1>
+              <h2>
+              Penghasilan :
+              <span class='hasil'>Rp. ".
+          number_format($this->penghasilan)."</span>
+          <br>
 
-    nisab :
-    <span class='hasil'>Rp. ".
-number_format($this->nisab)."</span>
-<br>
+              pengeluaran :
+              <span class='hasil'>Rp. ".
+          number_format($this->pengeluaran)."</span>
+          <br>
 
-    kadar zakat :
-    <span class='persen'>".KDR."% </span>
-<br>
+              nisab :
+              <span class='hasil'>Rp. ".
+          number_format($this->nisab)."</span>
+          <br>
 
-    Total Zakat : <span class='hasil'>Rp. ".
-number_format($this->result)."</span>
-</h2>
-</fieldset>
-<br><br>
-    ";
+              kadar zakat :
+              <span class='persen'>".KDR."% </span>
+          <br>
 
-endif;
+              Total Zakat : <span class='hasil'>Rp. ".
+          number_format($this->result)."</span>
+          </h2>
+          </fieldset>
+          <br><br>
+          ";
+
+      endif;
 
   }
 

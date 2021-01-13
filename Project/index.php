@@ -11,16 +11,13 @@
 <main>
 	<div class="container">
 		<div class="row">
-			<?=$base::sayHallo();?>	
+			<?=$base->sayHallo();?>	
 		</div>
 
 		<div class="row">
 			
 			<?php
-
-
-				$zakat->setZakat(10000000,2000000);
-
+				$zakat->setZakat(0,0);
 				$zakat->getZakat();
 
 				$add->getAdd(5,4);

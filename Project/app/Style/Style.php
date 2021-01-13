@@ -15,7 +15,10 @@ class Style extends \app\BaseClass\BaseClass {
 			  overflow-x: hidden;
 			  font: 100%/1.5 system-ui, sans-serif;
 			}
-			.main {
+			fieldset{
+				width: 70%;
+			}
+			main {
 				max-width: 600px;
 			  	margin-left: auto;
 			  	margin-right: auto;
@@ -25,7 +28,7 @@ class Style extends \app\BaseClass\BaseClass {
 			  position: relative;
 			  left: 50%;
 			  right: 50%;
-			  margin-left: -50vw;
+			  margin-left: -45vw;
 			  margin-right: -50vw;
 			}
 			.row{

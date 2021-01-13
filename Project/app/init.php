@@ -21,7 +21,6 @@ spl_autoload_register(function($class){
   if($class === "Profesi"){
   	require_once 'Zakat/'.$class.'/'.$class.'.php';
   }else{
-  	
   require_once $class.'/'.$class.'.php';
   }
 
@@ -31,14 +30,13 @@ spl_autoload_register(function($class){
 //instantiasi Base Class
 use \app\BaseClass\BaseClass;
 $base=new BaseClass;
-//instantiasi Zakat profesi
+// instantiasi Zakat profesi
 use \app\Zakat\Profesi\Profesi;
 $zakat=new Profesi;
 
 // style
 use \app\Style\Style;
 $style = new Style;
-
 
 //Instantiasi kalkulator masbro
 use \app\Add\Add;
