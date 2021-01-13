@@ -1,0 +1,6 @@
+RewriteEngine On
+Options -Indexes
+Options -Multiviews
+
+RewriteRule ^home?$ home.php
+RewriteRule ^welcome/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) welcome.php?id=$1&uid=$2

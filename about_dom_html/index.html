@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>About Dom HTML with JQUERY</title>
+
+	<style type="text/css">
+		input[type="checkbox"]{
+			display: none;
+		}
+
+		.red{
+			margin-left: 1.2rem;
+			display: inline-block;
+			font-size: 3rem;
+			background: red;
+			cursor: pointer;
+			width: 10%;
+			height: 10vh;
+			border-radius: 2.7rem;
+		}
+		.coral{
+			margin-left: 1.2rem;
+			display: inline-block;
+			font-size: 3rem;
+			background: coral;
+			cursor: pointer;
+			width: 10%;
+			height: 10vh;
+			border-radius: 2.7rem;
+		}
+
+		.blue{
+			margin-left: 1.2rem;
+			display: inline-block;
+			font-size: 3rem;
+			background: blue;
+			cursor: pointer;
+			width: 10%;
+			height: 10vh;
+			border-radius: 2.7rem;
+		}
+
+		.result{
+			background: rgba(111, 0.3, 0.2, 0.7);
+			width: 75%;
+			height: 35.5vh;
+			display: flex;
+		}
+
+		.result h3{
+			color: #fff;
+			margin-top: 2rem;
+			text-align: center;
+			font-family: cursive;
+			text-shadow: 5px 5px rgba(0, 0, 0, 255);
+		}
+
+		#result{
+			color: #fff;
+			background: gray;
+		}
+		#reset{
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+			background: rgba(255, 115, 113, 0.7);
+			width: 25.5%;
+			height: 10vh;
+			margin-left: 3rem;
+			font-size: 1.2rem;
+			color: #fff;
+			text-shadow: .2rem .2rem rgba(3, 3, 3, 1.3);
+			cursor: pointer;
+		}
+	</style>
+
+</head>
+<body>
+
+	<h3>Change Color : </h3>
+
+<div id="changeColor">
+		
+	<input type="checkbox" id="red" value="red" name="color">
+	<label class="red" for="red"></label>
+
+	<input type="checkbox" id="coral" value="coral" name="color">
+	<label class="coral" for="coral"></label>
+
+	<input type="checkbox" id="blue" value="blue" name="color">
+	<label class="blue" for="blue"></label>
+
+</div>
+
+<button id="reset">Reset Color</button>
+
+<div class="result">
+	<h3>Color Change : <span id="result"></span></h3>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
