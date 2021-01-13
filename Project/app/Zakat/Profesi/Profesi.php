@@ -10,9 +10,9 @@ pujiermanto(codesyariah - 2019)
 */
 //   Yuk Bayar Zakat
 
-namespace src\Zakat;
+namespace app\Zakat\Profesi;
 
-class Zakat extends \src\BaseClass\BaseClass{
+class Profesi extends \app\BaseClass\BaseClass{
 
   private static $qiyas=653,
                  $gabah=5000,
@@ -102,7 +102,7 @@ number_format($this->nisab)."</span>
 <br>
 
     Total Zakat : <span class='hasil'>Rp. ".
-number_format($this->result)." /bulan </span>
+number_format($this->result)."</span>
 </h2>
 </fieldset>
 <br><br>

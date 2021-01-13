@@ -10,22 +10,20 @@
              *****
 pujiermanto(codesyariah - 2019)
 */
-namespace src\Multiply;
+namespace app\Add;
 
-class Multiply extends \src\BaseClass\BaseClass{
+class Add extends \app\BaseClass\BaseClass{
 
-  public function getMult($a,$b){
+  //Setup calculator method
+  public function getAdd($a,$b){
 
-    $this->result=$a * $b;
+    $this->result=$a + $b;
 
-    echo "Multiply of {$a} and {$b}
+    echo "Sum of {$a} and {$b}
     is
     <span class='hasil'>
-    {$this->result}
-    </span>
+    {$this->result}</span>
     <br>\n";
-
   }
-
 
 }

@@ -1,33 +1,47 @@
-<?php
-//koding kala weekend cerita
-//kopinya neng .... jangan lupa
-//jangan panik yah neng
-/*
-             ****
-             simple
-      autoloader namespace
-           inheritance
-             *****
-pujiermanto(codesyariah - 2019)
-*/
+<?php require_once(dirname(__FILE__)) .'/app/init.php'; ?>
 
-require_once(dirname(__FILE__)) .'/AutoLoader.php';
+<!DOCTYPE html>
+<html>
+<head>
+	<title><?php $base->getTitle("NameSpace | HomePage")?></title>
+<?php $style->getStyle("home");?>
+</head>
+<body>
+
+<main>
+	<div class="container">
+		<div class="row">
+			<?=$base::sayHallo();?>	
+		</div>
+
+		<div class="row">
+			
+			<?php
 
 
-echo $base::sayHallo();
+				$zakat->setZakat(10000000,2000000);
 
-//yuk Bayar zakat
-$zakat->setZakat(3000000,2000000);
-$zakat->getZakat();
+				$zakat->getZakat();
 
-$add->getAdd(5,4);
+				$add->getAdd(5,4);
 
-$sub->getSub(10,5);
+				$sub->getSub(10,5);
 
-$mult->getMult(100.55,45.01);
+				$mult->getMult(100.55,45.01);
 
-$div->getDiv(100.5,2500.4);
+				$div->getDiv(100.5,2500.4);
 
-$mod->getMod(10,2);
+				$mod->getMod(10,2);
 
-$x->getGanjilGenap(19);
+				$x->getGanjilGenap(19);
+
+			?>
+				
+		</div>	
+
+	</div>
+</main>
+
+</body>
+</html>
+

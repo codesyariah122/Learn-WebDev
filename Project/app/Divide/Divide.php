@@ -10,20 +10,21 @@
              *****
 pujiermanto(codesyariah - 2019)
 */
-namespace src\Add;
+namespace app\Divide;
 
-class Add extends \src\BaseClass\BaseClass{
+class Divide extends \app\BaseClass\BaseClass{
 
-  //Setup calculator method
-  public function getAdd($a,$b){
+  public function getDiv($a,$b){
 
-    $this->result=$a + $b;
+    $this->result=$a / $b;
 
-    echo "Sum of {$a} and {$b}
+    echo "Divide of {$a} and {$b}
     is
     <span class='hasil'>
-    {$this->result}</span>
+    {$this->result}
+    </span>
     <br>\n";
   }
+
 
 }

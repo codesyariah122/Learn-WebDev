@@ -10,20 +10,22 @@
              *****
 pujiermanto(codesyariah - 2019)
 */
-namespace src\Substract;
+namespace app\Multiply;
 
-class Substract extends \src\BaseClass\BaseClass{
+class Multiply extends \app\BaseClass\BaseClass{
 
-  //Setup calculator method
-  public function getSub($a,$b){
+  public function getMult($a,$b){
 
-    $this->result=$a - $b;
-    
-    echo "Substract of {$a} and {$b}
+    $this->result=$a * $b;
+
+    echo "Multiply of {$a} and {$b}
     is
     <span class='hasil'>
-    {$this->result}</span>
+    {$this->result}
+    </span>
     <br>\n";
+
   }
+
 
 }

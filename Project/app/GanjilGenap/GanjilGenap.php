@@ -1,7 +1,7 @@
 <?php
-namespace src\GanjilGenap;
+namespace app\GanjilGenap;
 
-class GanjilGenap extends \src\BaseClass\BaseClass{
+class GanjilGenap extends \app\BaseClass\BaseClass{
 
   public function getGanjilGenap($n=11){
     $this->result=$n;

@@ -1,6 +1,6 @@
 <?php
-namespace src\Modulus;
-class Modulus extends \src\BaseClass\BaseClass{
+namespace app\Modulus;
+class Modulus extends \app\BaseClass\BaseClass{
 
   public function getMod($a,$b){
     $this->result=$a % $b;
