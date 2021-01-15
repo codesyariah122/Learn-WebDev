@@ -14,7 +14,7 @@ class Main extends CI_Controller {
 			'uri' => $this->uri->segment(1),
 			'title' => 'MyArtisan Website'
 		];
-		$this->template->view('contents/home', $data);
+		$this->template->viewnya('contents/home', $data);
 	}
 
 	public function about()
@@ -28,7 +28,7 @@ class Main extends CI_Controller {
 			'title' => 'AboutMe Page'
 		];
 
-		$this->template->view('contents/about', $data);
+		$this->template->viewnya('contents/about', $data);
 	}
 
 	public function blog()
@@ -42,7 +42,7 @@ class Main extends CI_Controller {
 			'title' => 'MyBlog Page'
 		];
 
-		$this->template->view('contents/blog', $data);
+		$this->template->viewnya('contents/blog', $data);
 	}
 
 	public function contact()
@@ -55,7 +55,7 @@ class Main extends CI_Controller {
 			'uri' => $this->uri->segment(1),
 			'title' => 'MyContact Page'
 		];
-		$this->template->view('contents/contact', $data);
+		$this->template->viewnya('contents/contact', $data);
 	}
 
 }
