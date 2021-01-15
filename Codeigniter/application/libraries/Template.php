@@ -8,7 +8,7 @@ class Template {
 		$this->ci_ =&get_instance();
 	}
 
-	function view($content, $data=null)
+	function viewnya($content, $data=null)
 	{
 		$data['header'] = $this->ci_->load->view('template/header', $data, TRUE);
 
