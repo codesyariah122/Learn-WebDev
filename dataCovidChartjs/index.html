@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title id="title"></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-6 mt-5 select-data">
+				<h1>Update Data Covid / Provinsi</h1>
+
+				<div class="select"></div>
+
+				<div class="result-error mt-2">
+					<div class="alert alert-danger" role="alert">
+					 Pilih provinsi yang tersedia. Terlebih dahulu !
+					</div>
+				</div>
+
+				  	<div class="row">
+		                <div class="col-md-12 col-xs-12 col-sm-12 mt-3 mb-3">
+		                	<div id="loading"></div>
+		                	<!-- chart line -->
+							<canvas id="chart-line"></canvas>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card mb-5" style="width: 18rem;">
+							  <div class="card-body"></div>
+							</div>
+						</div>
+
+						<div class="col-md-8 ml-auto">
+							<!-- chart pie -->
+							<canvas id="chart-pie-gender"></canvas>
+							<canvas id="chart-pie-age"></canvas>
+						</div>
+					</div>
+			</div>
+
+			<div class="col-md-4 mt-2">
+				<img src="assets/img/covid1.jpg" class="img-responsive">
+			</div>
+		</div>
+	</div>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/MyScript.js"></script>
+<script type="text/javascript" src="assets/js/MyObj.js"></script>
+<script type="text/javascript" src="assets/js/chart-line.js"></script>
+<script type="text/javascript" src="assets/js/gender-chart.js"></script>
+<script type="text/javascript" src="assets/js/age-chart.js"></script>
+<script type="text/javascript" src="assets/js/MyChart.js"></script>
+
+</body>
+</html>
