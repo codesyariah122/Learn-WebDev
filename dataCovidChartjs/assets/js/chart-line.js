@@ -8,7 +8,7 @@ $(document).ready(function(){
 			$('.card-body').html('');
 			ObjData.chartLine.hide();
 			ObjData.chartGender.hide();
-			ObjData.ageChart.hide();
+			ObjData.chartAge.hide();
 		}else{
 			$('.card-body').html('');			
 			$('#select-provinsi').val('Choose...');
