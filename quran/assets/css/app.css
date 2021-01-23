@@ -26,7 +26,7 @@ input{
 }
 
 .disabled{
-	cursor: crosshair;
+  cursor: not-allowed !important;
 }
 
 .page-item{
