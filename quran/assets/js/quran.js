@@ -7,6 +7,7 @@ $(document).ready(function(){
 	ObjData.pilihSurah.on('click', function(){
 		const surahData = ObjData.selectSurah.val();
 
+		ObjData.Error.html('');
 		if(surahData == 'choose' || surahData == ''){
 			ObjData.hasil.html('');
 			ObjData.ViewAyat.html('');
