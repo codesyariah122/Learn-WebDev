@@ -158,4 +158,3 @@ const SelectSurah = (req, data) => {
 		}
 	})
 }
-
